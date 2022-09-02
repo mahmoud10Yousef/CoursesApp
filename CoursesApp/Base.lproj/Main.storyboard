@@ -22,22 +22,22 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background01" translatesAutoresizingMaskIntoConstraints="NO" id="V4l-5X-fr3">
                                         <rect key="frame" x="0.0" y="-140" width="414" height="464.5"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-qf-SDB">
-                                        <rect key="frame" x="16" y="20" width="382" height="350"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-qf-SDB" userLabel="CardView">
+                                        <rect key="frame" x="16" y="20" width="382" height="362"/>
                                         <subviews>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEU-06-HPe">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="350"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="362"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZfY-BU-23m">
-                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="350"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="362"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="YkV-JZ-KxT">
                                                             <rect key="frame" x="0.0" y="0.0" width="382" height="217"/>
                                                         </imageView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZI-3o-5Oy">
-                                                            <rect key="frame" x="0.0" y="217" width="382" height="133"/>
+                                                            <rect key="frame" x="0.0" y="217" width="382" height="145"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="n3t-Tc-33L">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="133"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="145"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 SECTIONS - 3 HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Ng-0iK">
@@ -64,7 +64,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="xAE-Ng-0iK" secondAttribute="trailing" constant="20" id="C7i-XB-dit"/>
                                                                     <constraint firstItem="Pkd-ig-q11" firstAttribute="top" secondItem="xAE-Ng-0iK" secondAttribute="bottom" constant="8" id="Sgb-Kt-s6y"/>
                                                                     <constraint firstAttribute="trailing" secondItem="Pkd-ig-q11" secondAttribute="trailing" constant="20" id="biU-cB-ZC3"/>
-                                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pkd-ig-q11" secondAttribute="bottom" constant="16" id="dDx-ej-NPe"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Pkd-ig-q11" secondAttribute="bottom" constant="40" id="dDx-ej-NPe"/>
                                                                     <constraint firstItem="nUz-6b-2JA" firstAttribute="leading" secondItem="n3t-Tc-33L" secondAttribute="leading" constant="20" id="ddm-h1-Lb7"/>
                                                                     <constraint firstItem="nUz-6b-2JA" firstAttribute="top" secondItem="n3t-Tc-33L" secondAttribute="top" constant="8" id="f5D-3M-LDS"/>
                                                                     <constraint firstAttribute="trailing" secondItem="nUz-6b-2JA" secondAttribute="trailing" constant="20" id="gDf-xz-7N0"/>
@@ -100,8 +100,9 @@
                                             <constraint firstAttribute="trailing" secondItem="jEU-06-HPe" secondAttribute="trailing" id="6X6-vc-mPu"/>
                                             <constraint firstAttribute="bottom" secondItem="jEU-06-HPe" secondAttribute="bottom" id="77y-E0-npL"/>
                                             <constraint firstItem="jEU-06-HPe" firstAttribute="top" secondItem="hgZ-qf-SDB" secondAttribute="top" id="KhK-qs-6lV"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="QEs-T1-KGH"/>
                                             <constraint firstItem="jEU-06-HPe" firstAttribute="leading" secondItem="hgZ-qf-SDB" secondAttribute="leading" id="U8V-sx-EC8"/>
-                                            <constraint firstAttribute="height" constant="350" id="o2n-ne-cuX"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="o2n-ne-cuX"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -129,12 +130,14 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="hgZ-qf-SDB" firstAttribute="centerX" secondItem="EyP-Zo-RZD" secondAttribute="centerX" id="9wu-ka-tZ8"/>
                                     <constraint firstItem="V4l-5X-fr3" firstAttribute="leading" secondItem="gPd-gj-WM5" secondAttribute="leading" id="IiZ-oB-36L"/>
                                     <constraint firstItem="V4l-5X-fr3" firstAttribute="trailing" secondItem="gPd-gj-WM5" secondAttribute="trailing" id="Otv-1e-hHU"/>
                                     <constraint firstItem="V4l-5X-fr3" firstAttribute="top" secondItem="gPd-gj-WM5" secondAttribute="top" id="SxS-qr-UbU"/>
+                                    <constraint firstAttribute="bottom" secondItem="hgZ-qf-SDB" secondAttribute="bottom" constant="40" id="aQe-HP-8vg"/>
                                     <constraint firstItem="hgZ-qf-SDB" firstAttribute="top" secondItem="KEp-K6-sOD" secondAttribute="top" constant="20" id="cEY-pX-U2g"/>
-                                    <constraint firstItem="gPd-gj-WM5" firstAttribute="trailing" secondItem="hgZ-qf-SDB" secondAttribute="trailing" constant="16" id="hER-ck-bIJ"/>
-                                    <constraint firstItem="hgZ-qf-SDB" firstAttribute="leading" secondItem="gPd-gj-WM5" secondAttribute="leading" constant="16" id="lcR-u1-aXf"/>
+                                    <constraint firstItem="gPd-gj-WM5" firstAttribute="trailing" secondItem="hgZ-qf-SDB" secondAttribute="trailing" priority="750" constant="16" id="hER-ck-bIJ"/>
+                                    <constraint firstItem="hgZ-qf-SDB" firstAttribute="leading" secondItem="gPd-gj-WM5" secondAttribute="leading" priority="750" constant="16" id="lcR-u1-aXf"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="KEp-K6-sOD"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="gPd-gj-WM5"/>
@@ -181,6 +184,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fKE-OR-fY9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YSz-kw-hlA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="TabBarTint"/>
